@@ -151,7 +151,6 @@ namespace Apexa.DataAccess.Repositories
                 CurrentAdvisor.Address = UpdateAdvisor.Address;
                 CurrentAdvisor.Phone = UpdateAdvisor.Phone;
                 CurrentAdvisor.SIN = UpdateAdvisor.SIN;
-                CurrentAdvisor.HealthStatus = UpdateAdvisor.HealthStatus;
 
                 validationResults = new List<ValidationResult>();
                 contexts = new ValidationContext(CurrentAdvisor, null, null);
