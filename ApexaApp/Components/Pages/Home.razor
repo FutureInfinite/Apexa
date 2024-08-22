@@ -1,0 +1,79 @@
+﻿@page "/"
+@using ApexaApp.Business.DataContracts
+@inject ApexaApp.Business.Interfaces.IAdvisorOperations AdvisorOps;
+@inject NavigationManager NavManager
+@rendermode InteractiveServer
+
+@if (Advisors == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>SIN</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>HealthStatus</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var advisor in Advisors)
+            {
+                <tr>
+                    <td>@advisor.SIN</td>
+                    <td>@advisor.Name</td>
+                    <td>@advisor.Address</td>
+                    <td>@advisor.Phone</td>
+                    <td>@advisor.HealthStatus</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <button class="btn btn-primary"  @onclick="AddAdvisor">Add Advisor</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary" @onclick="UpdateAdvisor">Update Advisor</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary" @onclick="DeleteAdvisor">Delete Advisor</button>
+                </td>
+            </tr>            
+        </tbody>
+    </table>
+    }
+
+@code 
+{
+    private IEnumerable<Advisor>? Advisors;
+
+    private void AddAdvisor()
+    {
+        NavManager.NavigateTo("/CreateAdvisor");
+    }
+
+    private void UpdateAdvisor()
+    {
+        NavManager.NavigateTo("/UpdateAdvisor");
+    }
+
+    private void DeleteAdvisor()
+    {
+        NavManager.NavigateTo("/DeleteAdvisor");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Advisors = await AdvisorOps.GetAdvisors();
+    }
+
+    
+}

@@ -1,0 +1,6 @@
+@Apexa.REST.Service_HostAddress = http://localhost:5125
+
+GET {{Apexa.REST.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

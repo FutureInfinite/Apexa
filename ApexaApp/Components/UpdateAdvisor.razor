@@ -1,0 +1,86 @@
+﻿@page "/UpdateAdvisor"
+
+@using ApexaApp.Business.DataContracts
+@using Support;
+
+@inject ApexaApp.Business.Interfaces.IAdvisorOperations AdvisorOps;
+@inject NavigationManager NavManager
+@rendermode InteractiveServer
+
+<table>
+    <tr>
+        <td>SIN</td>
+        <td><input type="text" id="SIN" name="SIN" @bind="@SIN"></td>
+    </tr>
+    <tr>        
+        <td>NAME</td>
+        <td><input type="text" id="NAME" name="NAME" @bind="@NAME"></td>
+    </tr>
+    <tr>
+        <td>ADDRESS</td>
+        <td><input type="text" id="ADDRESS" name="ADDRESS" @bind="@ADDRESS"></td>
+    </tr>
+    <tr>
+        <td>PHONE</td>
+        <td><input type="text" id="PHONE" name="PHONE" @bind="@PHONE"></td>
+    </tr>
+    <tr>                        
+        <td colspan="2"><h1 style="color:red">@FAIL_MESSAGE</h1></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><button class="btn btn-primary" @onclick="Get">Get</button></td>
+        <td><button class="btn btn-primary" @onclick="Update">Update</button></td>
+    </tr>    
+</table>
+
+
+@code 
+{
+    private string SIN;
+    private string NAME;
+    private string ADDRESS;
+    private string PHONE;
+    private string FAIL_MESSAGE;
+
+
+    private void Update()
+    {
+        Task<Response> Update = AdvisorOps.UpdateAdvisor(
+            SIN,
+            NAME,
+            ADDRESS,
+            PHONE
+            );
+
+        try
+        {
+            Update.Wait();
+
+            if (Update.Result.Succeeded)
+            {
+                NavManager.NavigateTo("/");
+            }
+            else
+            {
+                FAIL_MESSAGE = Update.Result.Message;
+            }            
+        }
+        catch(Exception ex)
+        {
+            FAIL_MESSAGE = ex.Message;
+        }
+
+    }
+
+    private void Get()
+    {
+        Task<Advisor> UpdateAdvisor = AdvisorOps.GetAdvisor(SIN);            
+        UpdateAdvisor.Wait();
+        NAME = UpdateAdvisor.Result.Name;
+        ADDRESS = UpdateAdvisor.Result.Address;
+        PHONE = UpdateAdvisor.Result.Phone;
+    }
+}
