@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "G:\\Development\\Tests\\Apexa\\ApexaTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44A50D00-9470-493F-A0DB-1599275F6B29}|Solution Items{44A50D00-9470-493F-A0DB-1599275F6B29}|G:\\Development\\Tests\\Apexa\\ApexaTest\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{44A50D00-9470-493F-A0DB-1599275F6B29}|Solution Items{44A50D00-9470-493F-A0DB-1599275F6B29}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1F113AE5-B9F1-4466-B6AE-2DC79327C16C}|ApexaApp\\ApexaApp.csproj|g:\\development\\tests\\apexa\\apexatest\\apexaapp\\business\\advisoroperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F113AE5-B9F1-4466-B6AE-2DC79327C16C}|ApexaApp\\ApexaApp.csproj|solutionrelative:apexaapp\\business\\advisoroperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44A50D00-9470-493F-A0DB-1599275F6B29}|Solution Items{44A50D00-9470-493F-A0DB-1599275F6B29}|G:\\Development\\Tests\\Apexa\\ApexaTest\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{44A50D00-9470-493F-A0DB-1599275F6B29}|Solution Items{44A50D00-9470-493F-A0DB-1599275F6B29}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3176E9E9-89EE-4F60-AB67-F129F40759B9}|Apexa.REST\\Apexa.REST.Service\\Apexa.REST.Service.csproj|g:\\development\\tests\\apexa\\apexatest\\apexa.rest\\apexa.rest.service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "README.md",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -51,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AdvisorOperations.cs",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\ApexaApp\\Business\\AdvisorOperations.cs",
               "RelativeDocumentMoniker": "ApexaApp\\Business\\AdvisorOperations.cs",
@@ -59,7 +59,8 @@
               "RelativeToolTip": "ApexaApp\\Business\\AdvisorOperations.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T15:01:07.082Z"
+              "WhenOpened": "2024-08-22T15:01:07.082Z",
+              "EditorCaption": ""
             }
           ]
         }
