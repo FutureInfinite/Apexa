@@ -43,8 +43,6 @@ namespace Apexa.DataAccess.Repositories
 
             Result = await InitialQuery.FirstOrDefaultAsync();
 
-            if (Result != null) Context.ClearAdvisorsState(Result);
-
             return Result;
         }
         
@@ -96,11 +94,11 @@ namespace Apexa.DataAccess.Repositories
             }
             catch(Exception ex)
             {
+                Context.ClearAdvisorsState(Adv);
                 throw;
             }
             finally
-            {
-                Context.ClearAdvisorsState(Adv);
+            {                
             }
         }
 
@@ -124,12 +122,12 @@ namespace Apexa.DataAccess.Repositories
                     Result = true;
                 }
                 catch (Exception ex)
-                {                    
+                {
+                    Context.ClearAdvisorsState(CurrentAdvisor);
                     throw;
                 }
                 finally
                 {
-                    Context.ClearAdvisorsState(CurrentAdvisor);
                 }                
             }
             else //specified advisor does not exist
@@ -166,10 +164,9 @@ namespace Apexa.DataAccess.Repositories
                 }                
                 else
                 {
+                    Context.ClearAdvisorsState(CurrentAdvisor);
                     throw new Exception(validationResults.Count > 0 ? validationResults[0].ErrorMessage : "");
                 }
-
-                Context.ClearAdvisorsState(CurrentAdvisor);
             }
             else //the specified advisro does not exist - cannot update
                 Result = false;
