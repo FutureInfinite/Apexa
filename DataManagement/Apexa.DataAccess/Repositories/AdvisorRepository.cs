@@ -96,7 +96,6 @@ namespace Apexa.DataAccess.Repositories
             }
             catch(Exception ex)
             {
-                
                 throw;
             }
             finally

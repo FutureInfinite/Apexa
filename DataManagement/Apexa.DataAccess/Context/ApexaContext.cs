@@ -43,7 +43,7 @@ namespace Apexa.DataAccess.Context
         /// </summary>
         public void ClearAdvisorsState(Advisor Adv)
         {
-            Entry(Adv).State = EntityState.Unchanged;            
+            Entry(Adv).State = EntityState.Detached;            
         }
         #endregion Operations
     }
