@@ -4,6 +4,7 @@ using Apexa.DataContracts;
 
 using Support;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Swashbuckle.AspNetCore.Annotations;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,7 +12,7 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 namespace Apexa.REST.Service.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController]    
     public class AdvisorController : ControllerBase
     {
         #region Properties&Attributes
@@ -29,6 +30,7 @@ namespace Apexa.REST.Service.Controllers
 
         #region Operations
         [HttpGet("Check")]
+        [SwaggerOperation("Determine if Service is available")]
         public bool CheckService()
         {
             return true;
@@ -41,6 +43,7 @@ namespace Apexa.REST.Service.Controllers
         /// <param name="SIN"></param>
         /// <returns></returns>
         [HttpGet("Get/{SIN}")]
+        [SwaggerOperation("Get specified Advisors from the DB")]
         public async Task<Advisor> GetAdvisor(string SIN)
         {
             return await AdvisorAPI.GetAdvisor(SIN);
@@ -52,6 +55,7 @@ namespace Apexa.REST.Service.Controllers
         /// <param name="SIN"></param>
         /// <returns></returns>
         [Route("Create/{SIN}/{Name}/{Address}/{Phone}")]
+        [SwaggerOperation("Add specified Advisor to DB")]
         [HttpPost]
         public async Task<Response> CreateAdvisor(
             string SIN,
@@ -91,6 +95,7 @@ namespace Apexa.REST.Service.Controllers
         /// <param name="SIN"></param>
         /// <returns></returns>
         [HttpDelete("Delete/{SIN}")]
+        [SwaggerOperation("Delete a specified Advisor from DB")]
         public async Task<bool> DeleteAdvisor(string SIN)
         {
             return await AdvisorAPI.DeleteAdvisor(SIN);
@@ -105,6 +110,7 @@ namespace Apexa.REST.Service.Controllers
         /// <param name="Phone"></param>
         /// <returns></returns>
         [HttpPut("Update/{SIN}/{Name}/{Address}/{Phone}")]
+        [SwaggerOperation("Update identified Advisor in DB")]
         public async Task<Response> SaveAdvisor(
             string SIN,
             string Name,
@@ -142,6 +148,7 @@ namespace Apexa.REST.Service.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("GetAllAdvisors")]
+        [SwaggerOperation("Get all Advisors from the DB")]
         public async Task<IEnumerable<Advisor>> GetAdvisors()
         {
             return await AdvisorAPI.GetAdvisors();
