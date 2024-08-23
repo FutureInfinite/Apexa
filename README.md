@@ -25,10 +25,24 @@ The solutoin uses typical Depenmdency Injection but some aspects of DI injection
 	-	ApexaApp
 		- This is a Microsoft Blazor based project that has pages that use all the operations defined iun the data layer
 
-- The service was configured to have swagger active also for release. Can access via the reelase url at:
-	- http://[URL BASE]/swagger/index.html
+- The service was configured to have swagger active also for release. Can access via the debug url at:
+	- https://localhost:7274/swagger/index.html
 - The web app is testable in debug mode and can be deployed to IIS in release mode (which was done and validated that it worked).
+- Can use the following posershell script operations to access the API via the DEBUG version of the service
+	- $Url = "https://localhost:7274/api/Advisor/Create/160028304/John Doe/123 this Road, This Place/0123456789"
+	- Invoke-RestMethod -Method 'Post' -Uri $url -Credential $Cred 
 
+	- $Url = "https://localhost:7274/api/Advisor/Get/160028304"
+	- Invoke-RestMethod -Method 'Get' -Uri $url -Credential $Cred 
+
+	- $Url = "https://localhost:7274/api/Advisor/Update/160028304/Jane Doe/124 this Road, This Place/0123456789"
+	- Invoke-RestMethod -Method 'Put' -Uri $url -Credential $Cred 
+
+	- $Url = "https://localhost:7274/api/Advisor/Get/160028304"
+	- Invoke-RestMethod -Method 'Get' -Uri $url -Credential $Cred 
+
+	- $Url = "https://localhost:7274/api/Advisor/Delete/160028304"
+	- Invoke-RestMethod -Method 'Delete' -Uri $url -Credential $Cred 	
  
 # Documentation
 - It was indicated that swagger was to be used for documentation. I am not familiair with using swagger for general libraries and was able to determine how to integrate with them. I did prepare the REST service described above to use Swagger for operation exposure.
