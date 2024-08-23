@@ -45,6 +45,6 @@ The solutoin uses typical Depenmdency Injection but some aspects of DI injection
 	- Invoke-RestMethod -Method 'Delete' -Uri $url -Credential $Cred 	
  
 # Documentation
-- It was indicated that swagger was to be used for documentation. I am not familiair with using swagger for general libraries and was able to determine how to integrate with them. I did prepare the REST service described above to use Swagger for operation exposure.
+- It was indicated that swagger was to be used for documentation. I am not familiair with using swagger for general libraries. I did prepare the REST service described above to use Swagger for operation exposure and simple documentation.
 
 		
