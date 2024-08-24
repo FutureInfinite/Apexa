@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "G:\\Development\\Tests\\Apexa\\ApexaTest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{44A50D00-9470-493F-A0DB-1599275F6B29}|Solution Items{44A50D00-9470-493F-A0DB-1599275F6B29}|G:\\Development\\Tests\\Apexa\\ApexaTest\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{44A50D00-9470-493F-A0DB-1599275F6B29}|Solution Items{44A50D00-9470-493F-A0DB-1599275F6B29}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0FD9F0BF-921A-433A-AC43-08E714F7BED8}|Support\\Support.csproj|g:\\development\\tests\\apexa\\apexatest\\support\\support.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0FD9F0BF-921A-433A-AC43-08E714F7BED8}|Support\\Support.csproj|solutionrelative:support\\support.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -55,7 +59,20 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Support",
+              "Title": "README.md",
+              "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-24T14:43:43.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Support.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Support\\Support.csproj",
               "RelativeDocumentMoniker": "Support\\Support.csproj",
               "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Support\\Support.csproj",
@@ -67,98 +84,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApexaApp",
+              "DocumentIndex": 2,
+              "Title": "ApexaApp.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\ApexaApp\\ApexaApp.csproj",
               "RelativeDocumentMoniker": "ApexaApp\\ApexaApp.csproj",
               "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\ApexaApp\\ApexaApp.csproj",
               "RelativeToolTip": "ApexaApp\\ApexaApp.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T10:20:46.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T10:20:46.461Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Apexa.IoC",
+              "DocumentIndex": 3,
+              "Title": "Apexa.IoC.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Apexa.IoC\\Apexa.IoC.csproj",
               "RelativeDocumentMoniker": "Apexa.IoC\\Apexa.IoC.csproj",
               "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Apexa.IoC\\Apexa.IoC.csproj",
               "RelativeToolTip": "Apexa.IoC\\Apexa.IoC.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T10:20:21.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T10:20:21.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApexaTests",
+              "DocumentIndex": 4,
+              "Title": "ApexaTests.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\DataAccessTests\\ApexaTests.csproj",
               "RelativeDocumentMoniker": "DataAccessTests\\ApexaTests.csproj",
               "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\DataAccessTests\\ApexaTests.csproj",
               "RelativeToolTip": "DataAccessTests\\ApexaTests.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T10:19:37.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T10:19:37.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Apexa.Services",
+              "DocumentIndex": 5,
+              "Title": "Apexa.Services.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Services\\Apexa.Services\\Apexa.Services.csproj",
               "RelativeDocumentMoniker": "Services\\Apexa.Services\\Apexa.Services.csproj",
               "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Services\\Apexa.Services\\Apexa.Services.csproj",
               "RelativeToolTip": "Services\\Apexa.Services\\Apexa.Services.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T10:18:46.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T10:18:46.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Apexa.REST.Service",
+              "DocumentIndex": 6,
+              "Title": "Apexa.REST.Service.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Apexa.REST\\Apexa.REST.Service\\Apexa.REST.Service.csproj",
               "RelativeDocumentMoniker": "Apexa.REST\\Apexa.REST.Service\\Apexa.REST.Service.csproj",
               "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Apexa.REST\\Apexa.REST.Service\\Apexa.REST.Service.csproj",
               "RelativeToolTip": "Apexa.REST\\Apexa.REST.Service\\Apexa.REST.Service.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T10:18:15.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T10:18:15.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Apexa.DataContracts",
+              "DocumentIndex": 7,
+              "Title": "Apexa.DataContracts.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\DataManagement\\Apexa.DataContracts\\Apexa.DataContracts.csproj",
               "RelativeDocumentMoniker": "DataManagement\\Apexa.DataContracts\\Apexa.DataContracts.csproj",
               "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\DataManagement\\Apexa.DataContracts\\Apexa.DataContracts.csproj",
               "RelativeToolTip": "DataManagement\\Apexa.DataContracts\\Apexa.DataContracts.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T10:18:00.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T10:18:00.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Apexa.DataAccess",
+              "DocumentIndex": 8,
+              "Title": "Apexa.DataAccess.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\DataManagement\\Apexa.DataAccess\\Apexa.DataAccess.csproj",
               "RelativeDocumentMoniker": "DataManagement\\Apexa.DataAccess\\Apexa.DataAccess.csproj",
               "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\DataManagement\\Apexa.DataAccess\\Apexa.DataAccess.csproj",
               "RelativeToolTip": "DataManagement\\Apexa.DataAccess\\Apexa.DataAccess.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T10:17:14.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T10:17:14.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "GlobalVersion.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\GlobalVersion.csproj",
               "RelativeDocumentMoniker": "GlobalVersion.csproj",
@@ -166,21 +176,19 @@
               "RelativeToolTip": "GlobalVersion.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAswAIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T09:54:25.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T09:54:25.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Apexa.BLL",
+              "DocumentIndex": 9,
+              "Title": "Apexa.BLL.csproj",
               "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Apexa.BLL\\Apexa.BLL.csproj",
               "RelativeDocumentMoniker": "Apexa.BLL\\Apexa.BLL.csproj",
               "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Apexa.BLL\\Apexa.BLL.csproj",
               "RelativeToolTip": "Apexa.BLL\\Apexa.BLL.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-24T09:47:27.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T09:47:27.548Z"
             }
           ]
         }
