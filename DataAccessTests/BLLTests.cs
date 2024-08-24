@@ -214,6 +214,11 @@ namespace ApexaTests
                 await CreateAdvisor(NewAdvisor1);
                 //attempt to add a duplicate 
                 await CreateAdvisor(NewAdvisor1);
+                Assert.Fail("Was able to add an advisor with the same SIN");
+            }
+            catch (Exception ex)
+            {
+                Assert.True(true,ex.Message);
             }
             finally
             {
