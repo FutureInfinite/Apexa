@@ -15,7 +15,7 @@ The solution uses a multi-layers approach. It works from the back-end data acces
 The solution uses typical Dependency Injection but some aspects of DI injection into constructors were not possible so manual construction was done.
 
 # Execution
-- The general design of the solution is API-based using Microsoft development technology. I can see no direct access to the solution without using advanced tools like Powershell. And I did not have enough time to investigate how to use it.
+- The general design of the solution is API-based using Microsoft development technology. I can see no direct access to the solution without using advanced tools like Powershell. 
 - The solution was extended and a REST-based service was put together to demonstrate/give access to the underlying data operations.
 	-	Apexa.REST.Service
 		- This service provides HTTP access points to the data operations.
