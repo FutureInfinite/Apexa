@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>G:\Development\Deployment\ApexaApp</_PublishTargetUrl>
-    <History>True|2024-08-23T15:42:26.8649559Z||;True|2024-08-22T19:40:18.3956426-04:00||;True|2024-08-22T12:39:20.5323329-04:00||;</History>
+    <History>True|2024-08-24T10:23:12.2007408Z||;True|2024-08-23T11:42:26.8649559-04:00||;True|2024-08-22T19:40:18.3956426-04:00||;True|2024-08-22T12:39:20.5323329-04:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
