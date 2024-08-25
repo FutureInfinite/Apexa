@@ -76,13 +76,15 @@ namespace ApexaApp.Business
             {
                 try
                 {                
-                    var URL = string.Format("{0}/Create/{1}/{2}/{3}/{4}",
-                        AdvisorServiceURL,
-                        SIN,
-                        Name,
-                        Address,
-                        Phone);
-                    
+                    var URL = string.Format("{0}/Create?SIN={1}&Name={2}",
+                        AdvisorServiceURL,SIN,Name);
+
+                    if (!string.IsNullOrEmpty(Address))
+                        URL = string.Format("{0}&Address={1}", URL, Address);
+
+                    if (!string.IsNullOrEmpty(Phone))
+                        URL = string.Format("{0}&Phone={1}", URL, Phone);
+
                     if (UrlIsValid())
                     {
                         webClient.BaseAddress = new Uri(URL);
@@ -152,12 +154,14 @@ namespace ApexaApp.Business
             {
                 try
                 {
-                    var URL = string.Format("{0}/Update/{1}/{2}/{3}/{4}",
-                        AdvisorServiceURL,
-                        SIN,
-                        Name,
-                        Address,
-                        Phone);
+                    var URL = string.Format("{0}/Update?SIN={1}&Name={2}",
+                       AdvisorServiceURL, SIN, Name);
+
+                    if (!string.IsNullOrEmpty(Address))
+                        URL = string.Format("{0}&Address={1}", URL, Address);
+
+                    if (!string.IsNullOrEmpty(Phone))
+                        URL = string.Format("{0}&Phone={1}", URL, Phone);
 
                     if (UrlIsValid())
                     {

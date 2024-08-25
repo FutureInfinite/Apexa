@@ -3,8 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Apexa.DataContracts;
 
 using Support;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
+
 using Swashbuckle.AspNetCore.Annotations;
+
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -29,6 +30,8 @@ namespace Apexa.REST.Service.Controllers
         #endregion Lifetime
 
         #region Operations
+        
+
         [HttpGet("Check")]
         [SwaggerOperation("Determine if Service is available")]
         public bool CheckService()
@@ -54,14 +57,14 @@ namespace Apexa.REST.Service.Controllers
         /// </summary>
         /// <param name="SIN"></param>
         /// <returns></returns>
-        [Route("Create/{SIN}/{Name}/{Address}/{Phone}")]
+        //[Route("Create/{SIN}/{Name}/{Address?}/{Phone?}")]
         [SwaggerOperation("Add specified Advisor to DB")]
-        [HttpPost]
-        public async Task<Response> CreateAdvisor(
+        [HttpPost("Create2")]
+        public async Task<Response> CreateAdvisor1(
             string SIN,
             string Name,
             string Address,
-            string Phone
+            string? Phone
             )
         {
             Response Resp = new Response();
@@ -89,6 +92,40 @@ namespace Apexa.REST.Service.Controllers
             return Resp;
         }
 
+        //[Route("Create/{SIN}/{Name}/{Address?}/{Phone?}")]
+        [SwaggerOperation("Add specified Advisor to DB")]
+        [HttpPost("Create")]
+        public async Task<Response> CreateAdvisor(
+            string SIN,
+            string Name,
+            string Address = "",
+            string? Phone = "")
+        {
+            Response Resp = new Response();
+
+            Advisor NewAdvisor = new Advisor()
+            {
+                SIN = SIN,
+                Name = Name,
+                Address = Address,
+                Phone = Phone
+            };
+
+            try
+            {
+                await AdvisorAPI.CreateAdvisor(NewAdvisor);
+                Resp.Succeeded = true;
+            }
+            catch (Exception ex)
+            {
+                Resp.Message = ex.Message;
+                Resp.Succeeded = false;
+            }
+
+
+            return Resp;
+        }
+
         /// <summary>
         /// Delete the specified Advisor
         /// </summary>
@@ -108,14 +145,14 @@ namespace Apexa.REST.Service.Controllers
         /// <param name="Name"></param>
         /// <param name="Address"></param>
         /// <param name="Phone"></param>
-        /// <returns></returns>
-        [HttpPut("Update/{SIN}/{Name}/{Address}/{Phone}")]
-        [SwaggerOperation("Update identified Advisor in DB")]
+        /// <returns></returns>        
+        [HttpPut("Update")]
+        [SwaggerOperation("Update a specified Advisor from DB")]
         public async Task<Response> SaveAdvisor(
             string SIN,
             string Name,
-            string Address,
-            string Phone
+            string Address = "",
+            string? Phone = ""
         )
         {
             Response Result = new Response();

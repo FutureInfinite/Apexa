@@ -27,11 +27,10 @@ namespace Apexa.DataAccess.Context.Entities
         public string SIN { get; set; }
 
         [StringLength(255)]
-        public string Address { get; set; }
-        
-        [StringLength(10, MinimumLength = 10)]
-        [RegularExpression("[0-9]{3}[0-9]{3}[0-9]{4}$", ErrorMessage = "Phone number is not valid.")]
-        public string Phone { get; set; }
+        public string? Address { get; set; }
+                
+        [CheckPhoneAttribute(ErrorMessage = "Phone number is not valid.")]
+        public string? Phone { get; set; }
         public HealthStatus HealthStatus { get; set; }
         #endregion Properties&Attributes
     }
