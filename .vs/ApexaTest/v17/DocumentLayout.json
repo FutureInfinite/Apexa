@@ -1,71 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\Development\\Tests\\Apexa\\ApexaTest\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1F113AE5-B9F1-4466-B6AE-2DC79327C16C}|ApexaApp\\ApexaApp.csproj|g:\\development\\tests\\apexa\\apexatest\\apexaapp\\business\\advisoroperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F113AE5-B9F1-4466-B6AE-2DC79327C16C}|ApexaApp\\ApexaApp.csproj|solutionrelative:apexaapp\\business\\advisoroperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3176E9E9-89EE-4F60-AB67-F129F40759B9}|Apexa.REST\\Apexa.REST.Service\\Apexa.REST.Service.csproj|g:\\development\\tests\\apexa\\apexatest\\apexa.rest\\apexa.rest.service\\controllers\\advisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3176E9E9-89EE-4F60-AB67-F129F40759B9}|Apexa.REST\\Apexa.REST.Service\\Apexa.REST.Service.csproj|solutionrelative:apexa.rest\\apexa.rest.service\\controllers\\advisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F113AE5-B9F1-4466-B6AE-2DC79327C16C}|ApexaApp\\ApexaApp.csproj|g:\\development\\tests\\apexa\\apexatest\\apexaapp\\components\\updateadvisor.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1F113AE5-B9F1-4466-B6AE-2DC79327C16C}|ApexaApp\\ApexaApp.csproj|solutionrelative:apexaapp\\components\\updateadvisor.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateAdvisor.razor",
-              "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\ApexaApp\\Components\\UpdateAdvisor.razor",
-              "RelativeDocumentMoniker": "ApexaApp\\Components\\UpdateAdvisor.razor",
-              "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\ApexaApp\\Components\\UpdateAdvisor.razor",
-              "RelativeToolTip": "ApexaApp\\Components\\UpdateAdvisor.razor",
-              "ViewState": "AQIAACoAAAAAAAAAAAASwDIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-25T16:23:18.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdvisorOperations.cs",
-              "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\ApexaApp\\Business\\AdvisorOperations.cs",
-              "RelativeDocumentMoniker": "ApexaApp\\Business\\AdvisorOperations.cs",
-              "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\ApexaApp\\Business\\AdvisorOperations.cs",
-              "RelativeToolTip": "ApexaApp\\Business\\AdvisorOperations.cs",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAqwJwAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T16:22:26.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdvisorController.cs",
-              "DocumentMoniker": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Apexa.REST\\Apexa.REST.Service\\Controllers\\AdvisorController.cs",
-              "RelativeDocumentMoniker": "Apexa.REST\\Apexa.REST.Service\\Controllers\\AdvisorController.cs",
-              "ToolTip": "G:\\Development\\Tests\\Apexa\\ApexaTest\\Apexa.REST\\Apexa.REST.Service\\Controllers\\AdvisorController.cs",
-              "RelativeToolTip": "Apexa.REST\\Apexa.REST.Service\\Controllers\\AdvisorController.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAYwJgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:15:03.187Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
